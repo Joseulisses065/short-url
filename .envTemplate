@@ -1,0 +1,18 @@
+# Database Connection Configuration
+DB_DRIVER=com.mysql.cj.jdbc.Driver
+DB_HOSTNAME=<dbhostname>
+DB_USER=<username>
+DB_PASSWORD=<password>
+DB_ROOT_PASSWORD=<password>
+DB_ZONE=<dbzone>
+DB_NAME=<dbname>
+DB_ROOT_HOST=<hostname>
+DB_PORT=<dbport>
+DDL_AUTO=<ddl_auto_value>
+SHOW_SQL=<true_or_false>
+DB_DIALECT=<dialect
+LOG_LEVEL=<level>
+CORS_ORIGINS=<cors>
+JWT_SECRET=<secret>
+JWT_EXPIRATION=<expiration>
+API_PORT=<apiport>
