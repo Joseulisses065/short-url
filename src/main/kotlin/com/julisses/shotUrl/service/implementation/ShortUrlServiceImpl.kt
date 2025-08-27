@@ -12,7 +12,8 @@ import java.util.UUID
 @Service
 class ShortUrlServiceImpl(private val shortUrlRepository: ShortUrlRepository): ShortUrlService {
     override fun create(shortUrlVo: ShortUrlVo): ShortUrlVo {
-        val response = this.shortUrlRepository.save(ShortUrl(null,shortUrlVo.originalUrl,shortUrlVo.shortCode))
+        val random = UUID.randomUUID().toString().split("-").get(0)
+        val response = this.shortUrlRepository.save(ShortUrl(null,shortUrlVo.originalUrl,random))
         return ShortUrlVo(response.id,response.originalUrl,response.shortCode)
     }
 
